@@ -10,6 +10,7 @@
 
 @interface Game ()
 - (BOOL) isSpare:(int) ballIndex;
+- (BOOL) isStrike:(int) ballIndex;
 - (int) strikeBonus:(int) ballIndex;
 - (int) spareBonus:(int) ballIndex;
 - (int) sumOfBallsInFrame:(int) ballIndex;
@@ -24,7 +25,7 @@
     int score = 0;
     int ballIndex = 0;
     for (int frame = 0; frame < 10; frame++) {
-        if (rolls[ballIndex] == 10) { // strike
+        if ([self isStrike:ballIndex]) { // strike
             score += 10 + [self strikeBonus:ballIndex];
             ++ballIndex;
         } else if ([self isSpare:ballIndex]) {
@@ -40,6 +41,10 @@
 
 - (BOOL) isSpare:(int) ballIndex {
     return rolls[ballIndex] + rolls[ballIndex + 1] == 10;
+}
+
+- (BOOL) isStrike:(int)ballIndex {
+    return rolls[ballIndex] == 10;
 }
 
 - (int) strikeBonus:(int) ballIndex {
