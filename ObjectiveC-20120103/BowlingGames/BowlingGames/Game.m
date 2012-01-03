@@ -17,7 +17,7 @@
     int score = 0;
     int ballIndex = 0;
     for (int frame = 0; frame < 10; frame++) {
-        if (rolls[ballIndex] + rolls[ballIndex + 1] == 10) {
+        if ([self isSpare:ballIndex]) {
             score += 10 + rolls[ballIndex + 2];
             ballIndex += 2;
         } else {
@@ -26,5 +26,9 @@
         }
     }
     return score;
+}
+
+- (BOOL) isSpare:(int) ballIndex {
+    return rolls[ballIndex] + rolls[ballIndex + 1] == 10;
 }
 @end
