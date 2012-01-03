@@ -15,5 +15,5 @@
 
 - (void) rollWithPinCount:(int) pins;
 - (int) score;
-- (BOOL) isSpare:(int) ballIndex;
+
 @end

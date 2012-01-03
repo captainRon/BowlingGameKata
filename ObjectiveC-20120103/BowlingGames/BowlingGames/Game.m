@@ -8,6 +8,13 @@
 
 #import "Game.h"
 
+@interface Game ()
+- (BOOL) isSpare:(int) ballIndex;
+- (int) strikeBonus:(int) ballIndex;
+- (int) spareBonus:(int) ballIndex;
+- (int) sumOfBallsInFrame:(int) ballIndex;
+@end
+
 @implementation Game
 - (void) rollWithPinCount:(int)pins {
     rolls[currentRoll++] = pins;
@@ -18,13 +25,13 @@
     int ballIndex = 0;
     for (int frame = 0; frame < 10; frame++) {
         if (rolls[ballIndex] == 10) { // strike
-            score += 10 + rolls[ballIndex + 1] + rolls[ballIndex + 2];
+            score += 10 + [self strikeBonus:ballIndex];
             ++ballIndex;
         } else if ([self isSpare:ballIndex]) {
-            score += 10 + rolls[ballIndex + 2];
+            score += 10 + [self spareBonus:ballIndex];
             ballIndex += 2;
         } else {
-        score += rolls[ballIndex] + rolls[ballIndex + 1];
+        score += [self sumOfBallsInFrame:ballIndex];
         ballIndex += 2;
         }
     }
@@ -34,4 +41,17 @@
 - (BOOL) isSpare:(int) ballIndex {
     return rolls[ballIndex] + rolls[ballIndex + 1] == 10;
 }
+
+- (int) strikeBonus:(int) ballIndex {
+    return rolls[ballIndex + 1] + rolls[ballIndex + 2];
+}
+
+- (int) spareBonus:(int) ballIndex {
+    return rolls[ballIndex + 2];
+}
+
+- (int) sumOfBallsInFrame:(int)ballIndex {
+    return rolls[ballIndex] + rolls[ballIndex + 1];
+}
+
 @end
