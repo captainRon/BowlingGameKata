@@ -67,4 +67,13 @@
 
     STAssertEquals([game score], 16, nil);
 }
+
+- (void) testOneStrike {
+    [game rollWithPinCount:10]; // strike
+    [game rollWithPinCount:3];
+    [game rollWithPinCount:4];
+    [self rollPins:0 times:16];
+    
+    STAssertEquals([game score], 24, nil);
+}
 @end

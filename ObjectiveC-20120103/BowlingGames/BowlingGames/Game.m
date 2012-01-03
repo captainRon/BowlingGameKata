@@ -17,7 +17,10 @@
     int score = 0;
     int ballIndex = 0;
     for (int frame = 0; frame < 10; frame++) {
-        if ([self isSpare:ballIndex]) {
+        if (rolls[ballIndex] == 10) { // strike
+            score += 10 + rolls[ballIndex + 1] + rolls[ballIndex + 2];
+            ++ballIndex;
+        } else if ([self isSpare:ballIndex]) {
             score += 10 + rolls[ballIndex + 2];
             ballIndex += 2;
         } else {
