@@ -15,14 +15,14 @@
 
 - (int) score {
     int score = 0;
-    int ballInFrame = 0;
+    int ballIndex = 0;
     for (int frame = 0; frame < 10; frame++) {
-        if (rolls[ballInFrame] + rolls[ballInFrame + 1] == 10) {
-            score += 10 + rolls[ballInFrame + 2];
-            ballInFrame += 2;
+        if (rolls[ballIndex] + rolls[ballIndex + 1] == 10) {
+            score += 10 + rolls[ballIndex + 2];
+            ballIndex += 2;
         } else {
-        score += rolls[ballInFrame] + rolls[ballInFrame + 1];
-        ballInFrame += 2;
+        score += rolls[ballIndex] + rolls[ballIndex + 1];
+        ballIndex += 2;
         }
     }
     return score;
