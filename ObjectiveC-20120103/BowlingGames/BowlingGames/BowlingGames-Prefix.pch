@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BowlingGames' target in the 'BowlingGames' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

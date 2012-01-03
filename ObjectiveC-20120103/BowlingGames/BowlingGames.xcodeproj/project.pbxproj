@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADE940A114B32CEE00466908 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE940A014B32CEE00466908 /* Cocoa.framework */; };
+		ADE940AB14B32CEE00466908 /* BowlingGames.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE940AA14B32CEE00466908 /* BowlingGames.m */; };
+		ADE940B314B32CEE00466908 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE940B214B32CEE00466908 /* SenTestingKit.framework */; };
+		ADE940B414B32CEE00466908 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE940A014B32CEE00466908 /* Cocoa.framework */; };
+		ADE940B714B32CEE00466908 /* BowlingGames.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE9409D14B32CEE00466908 /* BowlingGames.dylib */; };
+		ADE940BD14B32CEE00466908 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADE940BB14B32CEE00466908 /* InfoPlist.strings */; };
+		ADE940CA14B32D8300466908 /* BowlingGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE940C914B32D8300466908 /* BowlingGameTest.m */; };
+		ADE940CD14B32DCA00466908 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE940CB14B32DCA00466908 /* Game.h */; };
+		ADE940CE14B32DCA00466908 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE940CC14B32DCA00466908 /* Game.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADE940B514B32CEE00466908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE9409414B32CEE00466908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE9409C14B32CEE00466908;
+			remoteInfo = BowlingGames;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADE9409D14B32CEE00466908 /* BowlingGames.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = BowlingGames.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE940A014B32CEE00466908 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ADE940A314B32CEE00466908 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		ADE940A414B32CEE00466908 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ADE940A514B32CEE00466908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADE940A814B32CEE00466908 /* BowlingGames-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BowlingGames-Prefix.pch"; sourceTree = "<group>"; };
+		ADE940A914B32CEE00466908 /* BowlingGames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BowlingGames.h; sourceTree = "<group>"; };
+		ADE940AA14B32CEE00466908 /* BowlingGames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BowlingGames.m; sourceTree = "<group>"; };
+		ADE940B114B32CEE00466908 /* BowlingGamesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingGamesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE940B214B32CEE00466908 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ADE940BA14B32CEE00466908 /* BowlingGamesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BowlingGamesTests-Info.plist"; sourceTree = "<group>"; };
+		ADE940BC14B32CEE00466908 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADE940C914B32D8300466908 /* BowlingGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BowlingGameTest.m; sourceTree = "<group>"; };
+		ADE940CB14B32DCA00466908 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		ADE940CC14B32DCA00466908 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADE9409A14B32CEE00466908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940A114B32CEE00466908 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE940AD14B32CEE00466908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940B314B32CEE00466908 /* SenTestingKit.framework in Frameworks */,
+				ADE940B414B32CEE00466908 /* Cocoa.framework in Frameworks */,
+				ADE940B714B32CEE00466908 /* BowlingGames.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADE9409214B32CEE00466908 = {
+			isa = PBXGroup;
+			children = (
+				ADE940A614B32CEE00466908 /* BowlingGames */,
+				ADE940B814B32CEE00466908 /* BowlingGamesTests */,
+				ADE9409F14B32CEE00466908 /* Frameworks */,
+				ADE9409E14B32CEE00466908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADE9409E14B32CEE00466908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADE9409D14B32CEE00466908 /* BowlingGames.dylib */,
+				ADE940B114B32CEE00466908 /* BowlingGamesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADE9409F14B32CEE00466908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940A014B32CEE00466908 /* Cocoa.framework */,
+				ADE940B214B32CEE00466908 /* SenTestingKit.framework */,
+				ADE940A214B32CEE00466908 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADE940A214B32CEE00466908 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940A314B32CEE00466908 /* AppKit.framework */,
+				ADE940A414B32CEE00466908 /* CoreData.framework */,
+				ADE940A514B32CEE00466908 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		ADE940A614B32CEE00466908 /* BowlingGames */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940A914B32CEE00466908 /* BowlingGames.h */,
+				ADE940AA14B32CEE00466908 /* BowlingGames.m */,
+				ADE940A714B32CEE00466908 /* Supporting Files */,
+				ADE940CB14B32DCA00466908 /* Game.h */,
+				ADE940CC14B32DCA00466908 /* Game.m */,
+			);
+			path = BowlingGames;
+			sourceTree = "<group>";
+		};
+		ADE940A714B32CEE00466908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940A814B32CEE00466908 /* BowlingGames-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADE940B814B32CEE00466908 /* BowlingGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940B914B32CEE00466908 /* Supporting Files */,
+				ADE940C914B32D8300466908 /* BowlingGameTest.m */,
+			);
+			path = BowlingGamesTests;
+			sourceTree = "<group>";
+		};
+		ADE940B914B32CEE00466908 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE940BA14B32CEE00466908 /* BowlingGamesTests-Info.plist */,
+				ADE940BB14B32CEE00466908 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ADE9409B14B32CEE00466908 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940CD14B32DCA00466908 /* Game.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ADE9409C14B32CEE00466908 /* BowlingGames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE940C314B32CEE00466908 /* Build configuration list for PBXNativeTarget "BowlingGames" */;
+			buildPhases = (
+				ADE9409914B32CEE00466908 /* Sources */,
+				ADE9409A14B32CEE00466908 /* Frameworks */,
+				ADE9409B14B32CEE00466908 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BowlingGames;
+			productName = BowlingGames;
+			productReference = ADE9409D14B32CEE00466908 /* BowlingGames.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		ADE940B014B32CEE00466908 /* BowlingGamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE940C614B32CEE00466908 /* Build configuration list for PBXNativeTarget "BowlingGamesTests" */;
+			buildPhases = (
+				ADE940AC14B32CEE00466908 /* Sources */,
+				ADE940AD14B32CEE00466908 /* Frameworks */,
+				ADE940AE14B32CEE00466908 /* Resources */,
+				ADE940AF14B32CEE00466908 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE940B614B32CEE00466908 /* PBXTargetDependency */,
+			);
+			name = BowlingGamesTests;
+			productName = BowlingGamesTests;
+			productReference = ADE940B114B32CEE00466908 /* BowlingGamesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADE9409414B32CEE00466908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "secunet AG";
+			};
+			buildConfigurationList = ADE9409714B32CEE00466908 /* Build configuration list for PBXProject "BowlingGames" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ADE9409214B32CEE00466908;
+			productRefGroup = ADE9409E14B32CEE00466908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE9409C14B32CEE00466908 /* BowlingGames */,
+				ADE940B014B32CEE00466908 /* BowlingGamesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADE940AE14B32CEE00466908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940BD14B32CEE00466908 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADE940AF14B32CEE00466908 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADE9409914B32CEE00466908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940AB14B32CEE00466908 /* BowlingGames.m in Sources */,
+				ADE940CE14B32DCA00466908 /* Game.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE940AC14B32CEE00466908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE940CA14B32D8300466908 /* BowlingGameTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADE940B614B32CEE00466908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE9409C14B32CEE00466908 /* BowlingGames */;
+			targetProxy = ADE940B514B32CEE00466908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADE940BB14B32CEE00466908 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADE940BC14B32CEE00466908 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADE940C114B32CEE00466908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ADE940C214B32CEE00466908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ADE940C414B32CEE00466908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BowlingGames/BowlingGames-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADE940C514B32CEE00466908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BowlingGames/BowlingGames-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADE940C714B32CEE00466908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BowlingGames/BowlingGames-Prefix.pch";
+				INFOPLIST_FILE = "BowlingGamesTests/BowlingGamesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ADE940C814B32CEE00466908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BowlingGames/BowlingGames-Prefix.pch";
+				INFOPLIST_FILE = "BowlingGamesTests/BowlingGamesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADE9409714B32CEE00466908 /* Build configuration list for PBXProject "BowlingGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE940C114B32CEE00466908 /* Debug */,
+				ADE940C214B32CEE00466908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE940C314B32CEE00466908 /* Build configuration list for PBXNativeTarget "BowlingGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE940C414B32CEE00466908 /* Debug */,
+				ADE940C514B32CEE00466908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADE940C614B32CEE00466908 /* Build configuration list for PBXNativeTarget "BowlingGamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE940C714B32CEE00466908 /* Debug */,
+				ADE940C814B32CEE00466908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADE9409414B32CEE00466908 /* Project object */;
+}
