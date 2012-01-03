@@ -47,6 +47,9 @@
     [game rollWithPinCount:5];
 }
 
+- (void)rollStrike {
+    [game rollWithPinCount:10];
+}
 
 - (void) testGutterGame {
     [self rollPins:0 times:20];
@@ -69,7 +72,7 @@
 }
 
 - (void) testOneStrike {
-    [game rollWithPinCount:10]; // strike
+    [self rollStrike];
     [game rollWithPinCount:3];
     [game rollWithPinCount:4];
     [self rollPins:0 times:16];
